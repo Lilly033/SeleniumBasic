@@ -1,0 +1,45 @@
+
+Alerts:
+Alert is a pop up message! Alert takes a complete focus of our main page that we are
+   working on .
+We can not proceed until it is handled.
+
+3 types of Alerts:
+     1) bew based alert/ htlm alerts - we can simply inspect and preform need action
+     2) Javascript alerts/ browser alert -we can handle these alerts by using switchTo method
+                                                          we can not inspect!
+     3) Windows based alerts - we can not handle with Selenium!
+
+     Types of Java script alerts:
+ 1) Simple alert -  click ok.
+ 2) confirmation alert - either cancel or click ok
+ 3) prompt alert- enter the text and then click ok  or cancel
+
+     To handle Java Script alerts  we have 4 methods:
+ 1) accept() - click ok
+ 2) dismiss() - click cancel
+ 3) getText()
+ 4) sendKeys()
+
+ To handle authentication alerts we need to pass username and password in the url
+   public static String url = "https://admin:admin@the-internet.herokuapp.com/basic_auth";
+                                    //username:password@
+
+   ------------------------------------------------------------
+
+    ----     Frames   ---- iframe
+ Frame is separate independent window in our webpage
+ Frames allow devs to represent multiple views on the page
+
+ 3 ways to interact with Frames:
+   1) by index
+   2) by name or ID
+   3) by WebElement
+
+ in alerts - switch to alert and switch automatically back
+ in frames - switch to frame manually and switch manually back to the main page
+
+ Interview question:
+ How do you handle Alerts in Selenium???
+ We handle Alerts by using Alert interface !!!
+
