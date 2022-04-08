@@ -60,15 +60,10 @@ public class Task01 {
                    System.out.println("Year DD has 115 year options: True");
                    }else{
                    System.out.println("Year DD has 115 year options: False");
+                   
                }
            }
                    driver.quit();
-
-
-
-
-
-
 
 
     }

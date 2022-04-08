@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HandleFrames {
-    public static String url = " http://www.uitestpractice.com/Students/Switchto";
+    public static String url = "http://www.uitestpractice.com/Students/Switchto";
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
@@ -18,6 +18,7 @@ public class HandleFrames {
         textbox.sendKeys("Batch 12 Forever!!!");
 
         driver.switchTo().defaultContent();
+
         WebElement alertButton = driver.findElement(By.id("alert"));
         alertButton.click();
         Thread.sleep(1000);
@@ -34,6 +35,5 @@ public class HandleFrames {
         driver.switchTo().frame(frameElement);
         textbox.clear();
         textbox.sendKeys("Hold your horses");
-
     }
 }

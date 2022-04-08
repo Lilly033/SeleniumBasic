@@ -40,3 +40,51 @@ Starts-with will identify the element with partial starting value
 Example: //button[starts-with(@data-testid, 'royal')]
 
 ends-with was used in xpath 1.0, we are using 2.0 and this method is not available
+
+
+<div> -- division
+<img> -- image
+<h> -- header
+<p> -- paragraph
+<li> -- list
+<ul> -- unordered list
+<ol> -- ordered list
+<br> -- breaking line
+
+
+Advanced Xpath
+is based on parent and child, sibling relationships
+
+identifying elements by following sibling
+//tagname[@attribute = 'attribute value']/following-sibling::tagname
+
+//input[@id = 'calFromDate']/following-sibling::img
+
+identifying elements by preceding siblings
+//tagname[@attribute = 'attribute value']/preceding-sibling::tagname
+
+//span[text() = '& Orders']/preceding-sibling::span
+//input[@id = 'calFromDate']/preceding-sibling::label
+
+identifying elements by parents
+//tagname[@attribute = 'attribute value']/parent::parentTagName
+
+//span[text() = '& Orders']/parent::a
+
+identifying an element by its ancestor
+//tagname[@attribute = 'attribute value']/ancestor::ancestorTagname
+
+//input[@id = 'email']/ancestor::form
+
+identifying element by index
+
+(//img[@class = 'ui-datepicker-trigger'])[2]
+
+
+HW
+Navigate to http://syntaxprojects.com
+Click on start practicing
+click on simple form demo
+enter any text on first text box
+click on show message
+quit the browser
